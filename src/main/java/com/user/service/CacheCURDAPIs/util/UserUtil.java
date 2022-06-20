@@ -18,12 +18,7 @@ public class UserUtil {
         }
     }
 
-    public static void main(String[] args) {
-        System.out.println(isValid("20010801"));
-        System.out.println(isValid("20220620"));
-    }
-
-    public static boolean checkFromCurrentDate(LocalDate passedDate) {
+    private static boolean checkFromCurrentDate(LocalDate passedDate) {
         LocalDate today = LocalDate.now();
         return today.isAfter(passedDate);
     }
